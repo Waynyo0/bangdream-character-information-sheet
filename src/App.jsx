@@ -39,7 +39,7 @@ export default function App() {
     <div className="app">
       <header className="app-header">
         <h1 className="app-title">BanG Dream! 成员档案</h1>
-        <p className="app-subtitle">10支乐队 · 50名角色</p>
+        <p className="app-subtitle">超伟大对吧，十人十色</p>
       </header>
 
       <nav className="tab-bar">
