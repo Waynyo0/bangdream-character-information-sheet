@@ -38,7 +38,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1 className="app-title">BanG Dream! 成员档案</h1>
+        <h1 className="app-title">BanG Dream! 档案</h1>
         <p className="app-subtitle">超伟大对吧，十人十色</p>
       </header>
 
