@@ -1,0 +1,110 @@
+.calendar-view {
+  padding: 16px 0;
+}
+
+.calendar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.calendar-nav-btn {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #16213e;
+  color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.calendar-nav-btn:hover {
+  border-color: #ff4499;
+  color: #ff4499;
+}
+
+.calendar-nav-btn:focus-visible {
+  outline: 2px solid #ff4499;
+  outline-offset: 2px;
+}
+
+.calendar-title {
+  font-size: 18px;
+  font-weight: 600;
+  min-width: 140px;
+  text-align: center;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  padding: 8px 0;
+  font-size: 13px;
+  color: #999;
+  font-weight: 600;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: default;
+  font-size: 14px;
+  position: relative;
+  transition: background 0.2s ease;
+  min-height: 44px;
+}
+
+.calendar-day.empty {
+  cursor: default;
+}
+
+.calendar-day.has-birthday {
+  cursor: pointer;
+  background: #1a1a40;
+}
+
+.calendar-day.has-birthday:hover {
+  background: #2a2a60;
+}
+
+.calendar-day.has-birthday:focus-visible {
+  outline: 2px solid #ff4499;
+  outline-offset: -2px;
+}
+
+.calendar-day-num {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.calendar-dots {
+  display: flex;
+  gap: 2px;
+  margin-top: 2px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.calendar-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}

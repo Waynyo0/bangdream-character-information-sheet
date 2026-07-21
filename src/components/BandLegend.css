@@ -1,0 +1,29 @@
+.band-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+  padding: 16px 20px;
+  background: #16213e;
+  border-radius: 10px;
+  margin-top: 24px;
+}
+
+.band-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.band-legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.band-legend-name {
+  white-space: nowrap;
+}

@@ -1,0 +1,156 @@
+.barchart-view {
+  padding: 16px 0;
+}
+
+.barchart-controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.sort-btn {
+  padding: 8px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #16213e;
+  color: #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  min-height: 44px;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.sort-btn:hover {
+  border-color: #ff4499;
+  color: #ff4499;
+}
+
+.sort-btn:focus-visible {
+  outline: 2px solid #ff4499;
+  outline-offset: 2px;
+}
+
+.sort-btn.active {
+  background: #ff4499;
+  color: #fff;
+  border-color: #ff4499;
+}
+
+.barchart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.barchart-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  background: #16213e;
+  border-radius: 6px;
+  min-height: 50px;
+  cursor: default;
+  opacity: 0;
+  animation: barchartEnter 0.4s ease forwards;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes barchartEnter {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .barchart-row {
+    opacity: 1;
+    animation: none;
+  }
+}
+
+.barchart-rank {
+  width: 28px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  flex-shrink: 0;
+}
+
+.barchart-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.barchart-name {
+  width: 80px;
+  font-size: 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.barchart-band {
+  width: 110px;
+  font-size: 12px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  color: #bbb;
+}
+
+.barchart-bar-wrap {
+  flex: 1;
+  height: 18px;
+  background: #0f0f23;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.barchart-bar {
+  height: 100%;
+  border-radius: 9px;
+  transition: width 0.4s ease;
+  min-width: 4px;
+}
+
+.barchart-height {
+  width: 48px;
+  text-align: right;
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+  color: #ddd;
+}
+
+@media (max-width: 640px) {
+  .barchart-row {
+    gap: 6px;
+    padding: 6px 8px;
+  }
+
+  .barchart-band {
+    display: none;
+  }
+
+  .barchart-name {
+    width: 64px;
+    font-size: 13px;
+  }
+
+  .barchart-height {
+    width: 40px;
+  }
+}

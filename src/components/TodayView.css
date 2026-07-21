@@ -1,0 +1,149 @@
+.today-view {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 560px;
+  margin: 0 auto;
+}
+
+.today-card,
+.next-card {
+  background: #16213e;
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.today-card-title,
+.next-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff4499;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.today-members {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.today-member-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 14px;
+  background: #1a1a40;
+  border-radius: 10px;
+}
+
+.today-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+}
+
+.today-info {
+  flex: 1;
+}
+
+.today-name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.today-band {
+  font-size: 13px;
+  margin-top: 3px;
+  color: #bbb;
+}
+
+.today-badge {
+  font-size: 24px;
+}
+
+.today-empty {
+  text-align: center;
+  color: #999;
+  padding: 20px 0;
+  font-size: 15px;
+}
+
+.next-content {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.next-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff4499;
+}
+
+.next-info {
+  flex: 1;
+}
+
+.next-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.next-band {
+  font-size: 14px;
+  margin-top: 3px;
+  color: #bbb;
+}
+
+.next-date {
+  font-size: 14px;
+  color: #999;
+  margin-top: 4px;
+}
+
+.next-countdown {
+  text-align: center;
+  background: #1a1a40;
+  border-radius: 12px;
+  padding: 14px 18px;
+}
+
+.next-days {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff4499;
+}
+
+.next-label {
+  font-size: 13px;
+  color: #999;
+}
+
+@media (max-width: 400px) {
+  .next-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .next-avatar {
+    width: 56px;
+    height: 56px;
+  }
+
+  .next-info {
+    text-align: center;
+  }
+
+  .next-countdown {
+    width: 100%;
+  }
+}
