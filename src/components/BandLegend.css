@@ -4,8 +4,8 @@
   justify-content: center;
   gap: 10px 20px;
   padding: 16px 24px;
-  background: #f5eff3;
-  border: 1px solid #dfd5dc;
+  background: #faf7fb;
+  border: 1px solid #d6c5da;
   border-radius: 14px;
   margin-top: 24px;
 }
@@ -15,7 +15,7 @@
   align-items: center;
   gap: 6px;
   font-size: 13px;
-  color: #8a7882;
+  color: #5e4d5a;
 }
 
 .band-legend-dot {

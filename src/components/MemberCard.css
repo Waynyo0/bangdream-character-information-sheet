@@ -20,9 +20,9 @@
   align-items: center;
   gap: 6px;
   padding: 8px 14px;
-  border: 1px solid #d4c7d0;
-  background: #f5eff3;
-  color: #6b5e65;
+  border: 1px solid #cbb5d0;
+  background: #faf7fb;
+  color: #5e4d5a;
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
@@ -33,12 +33,12 @@
 }
 
 .band-dropdown-trigger:hover {
-  border-color: #d4567a;
-  color: #d4567a;
+  border-color: #c94a70;
+  color: #c94a70;
 }
 
 .band-dropdown-trigger:focus-visible {
-  outline: 2px solid #d4567a;
+  outline: 2px solid #c94a70;
   outline-offset: 2px;
 }
 
@@ -52,13 +52,13 @@
   top: 100%;
   left: 0;
   margin-top: 4px;
-  background: #f7f1f5;
-  border: 1px solid #d4c7d0;
+  background: #faf7fb;
+  border: 1px solid #cbb5d0;
   border-radius: 10px;
   overflow: hidden;
   z-index: 100;
   min-width: 180px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .band-dropdown-item {
@@ -68,19 +68,19 @@
   padding: 10px 14px;
   min-height: 44px;
   font-size: 13px;
-  color: #6b5e65;
+  color: #5e4d5a;
   cursor: pointer;
   transition: background 0.15s ease;
 }
 
 .band-dropdown-item:hover {
-  background: #efe5ec;
-  color: #4a3f44;
+  background: #e8daf0;
+  color: #3a2e36;
 }
 
 .band-dropdown-item.selected {
-  background: #f5dfe8;
-  color: #d4567a;
+  background: #f0d4e0;
+  color: #c94a70;
   font-weight: 600;
 }
 
@@ -98,9 +98,9 @@
 
 .sort-btn {
   padding: 8px 20px;
-  border: 1px solid #d4c7d0;
-  background: #f5eff3;
-  color: #6b5e65;
+  border: 1px solid #cbb5d0;
+  background: #faf7fb;
+  color: #5e4d5a;
   border-radius: 8px;
   cursor: pointer;
   font-size: 14px;
@@ -110,19 +110,19 @@
 }
 
 .sort-btn:hover {
-  border-color: #d4567a;
-  color: #d4567a;
+  border-color: #c94a70;
+  color: #c94a70;
 }
 
 .sort-btn:focus-visible {
-  outline: 2px solid #d4567a;
+  outline: 2px solid #c94a70;
   outline-offset: 2px;
 }
 
 .sort-btn.active {
-  background: #d4567a;
+  background: #c94a70;
   color: #fff;
-  border-color: #d4567a;
+  border-color: #c94a70;
 }
 
 .cardgrid-grid {
@@ -132,8 +132,8 @@
 }
 
 .member-card {
-  background: #f7f1f5;
-  border: 1.5px solid #e2d5de;
+  background: #faf7fb;
+  border: 2px solid #d6c5da;
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
@@ -142,7 +142,7 @@
 
 .member-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 .member-card-band {
@@ -160,13 +160,13 @@
   object-fit: cover;
   margin: 14px auto 8px;
   display: block;
-  border: 3px solid #ece3e8;
+  border: 3px solid #e2d5e5;
 }
 
 .member-card-name {
   font-size: 15px;
   font-weight: 600;
-  color: #4a3f44;
+  color: #3a2e36;
   margin-bottom: 8px;
 }
 
@@ -177,21 +177,21 @@
   gap: 8px;
   padding: 8px;
   font-size: 13px;
-  color: #8a7882;
-  border-top: 1px solid #e8dce4;
-  background: #f2eaf0;
+  color: #6e5d68;
+  border-top: 1px solid #e0d3e5;
+  background: #f4edf6;
 }
 
 .member-card-height {
-  color: #6a9482;
+  color: #5a8872;
 }
 
 .member-card-sep {
-  color: #d4c7d0;
+  color: #cbb5d0;
 }
 
 .member-card-birthday {
-  color: #d4567a;
+  color: #c94a70;
 }
 
 @media (max-width: 480px) {

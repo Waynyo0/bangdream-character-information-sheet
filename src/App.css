@@ -13,13 +13,13 @@
   font-family: "Righteous", "Poppins", "Microsoft YaHei", sans-serif;
   font-size: 32px;
   font-weight: 400;
-  color: #d4567a;
+  color: #c94a70;
   letter-spacing: 1px;
 }
 
 .app-subtitle {
   font-size: 14px;
-  color: #a09098;
+  color: #8a7885;
   margin-top: 8px;
 }
 
@@ -28,7 +28,7 @@
   justify-content: center;
   gap: 4px;
   margin: 24px 0;
-  background: #dfd5dc;
+  background: #d6c3da;
   border-radius: 12px;
   padding: 5px;
   flex-wrap: wrap;
@@ -38,7 +38,7 @@
   padding: 10px 24px;
   border: none;
   background: transparent;
-  color: #8a7882;
+  color: #66505f;
   border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
@@ -49,24 +49,24 @@
 }
 
 .tab-btn:hover {
-  background: rgba(212, 86, 122, 0.15);
-  color: #d4567a;
+  background: rgba(201, 74, 112, 0.18);
+  color: #c94a70;
 }
 
 .tab-btn:focus-visible {
-  outline: 2px solid #d4567a;
+  outline: 2px solid #c94a70;
   outline-offset: -2px;
   border-radius: 10px;
 }
 
 .tab-btn.active {
-  background: #d4567a;
+  background: #c94a70;
   color: #fff;
 }
 
 .app-main {
-  background: #f2eaf0;
-  border: 1px solid #dfd5dc;
+  background: #f4edf6;
+  border: 1px solid #d6c3da;
   border-radius: 16px;
   padding: 20px 24px;
   min-height: 400px;
@@ -95,10 +95,10 @@
 .status-msg {
   text-align: center;
   padding: 60px 20px;
-  color: #b0a0a8;
+  color: #9a8590;
   font-size: 16px;
 }
 
 .status-error {
-  color: #cc8690;
+  color: #c4657a;
 }
