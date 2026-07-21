@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import members from "./data/members";
 import BarChartView from "./components/BarChartView";
 import { CardGridView } from "./components/CardGridView";
 import CalendarView from "./components/CalendarView";
@@ -15,25 +16,6 @@ const TABS = [
 
 export default function App() {
   const [activeTab, setActiveTab] = useState("today");
-  const [members, setMembers] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    fetch("/api/members")
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        return res.json();
-      })
-      .then((data) => {
-        setMembers(data);
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setLoading(false);
-      });
-  }, []);
 
   return (
     <div className="app">
@@ -55,23 +37,13 @@ export default function App() {
       </nav>
 
       <main className="app-main">
-        {loading && (
-          <div className="status-msg">加载中…</div>
-        )}
-        {error && (
-          <div className="status-msg status-error">加载失败：{error}</div>
-        )}
-        {!loading && !error && (
-          <>
-            {activeTab === "chart" && <BarChartView members={members} />}
-            {activeTab === "cards" && <CardGridView members={members} />}
-            {activeTab === "calendar" && <CalendarView members={members} />}
-            {activeTab === "today" && <TodayView />}
-          </>
-        )}
+        {activeTab === "chart" && <BarChartView members={members} />}
+        {activeTab === "cards" && <CardGridView members={members} />}
+        {activeTab === "calendar" && <CalendarView members={members} />}
+        {activeTab === "today" && <TodayView members={members} />}
       </main>
 
-      {!loading && !error && <BandLegend />}
+      <BandLegend />
     </div>
   );
 }

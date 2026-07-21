@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { formatBirthday } from "../utils/helpers";
+import { getTodayMembers, getNextBirthday, formatBirthday } from "../utils/helpers";
 import "./TodayView.css";
 
 const bandColors = {
@@ -15,29 +15,16 @@ const bandColors = {
   "梦限大MewType": "#c47e52",
 };
 
-export default function TodayView() {
+export default function TodayView({ members }) {
   const [todayMembers, setTodayMembers] = useState([]);
   const [nextBirthday, setNextBirthday] = useState(null);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Promise.all([
-      fetch("/api/members/birthdays/today").then((r) => r.json()),
-      fetch("/api/members/birthdays/next").then((r) => r.json()),
-    ])
-      .then(([today, next]) => {
-        setTodayMembers(today);
-        setNextBirthday(next);
-        setLoading(false);
-      })
-      .catch(() => setLoading(false));
-  }, []);
+    setTodayMembers(getTodayMembers(members));
+    setNextBirthday(getNextBirthday(members));
+  }, [members]);
 
   const today = new Date();
-
-  if (loading) {
-    return <div className="status-msg">加载中…</div>;
-  }
 
   return (
     <div className="today-view">
