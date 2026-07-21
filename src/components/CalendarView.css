@@ -7,15 +7,15 @@
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
 }
 
 .calendar-nav-btn {
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: #16213e;
-  color: #ccc;
+  border: 1px solid #d4c7d0;
+  background: #f5eff3;
+  color: #8a7882;
   border-radius: 50%;
   cursor: pointer;
   font-size: 18px;
@@ -26,12 +26,12 @@
 }
 
 .calendar-nav-btn:hover {
-  border-color: #ff4499;
-  color: #ff4499;
+  border-color: #d4567a;
+  color: #d4567a;
 }
 
 .calendar-nav-btn:focus-visible {
-  outline: 2px solid #ff4499;
+  outline: 2px solid #d4567a;
   outline-offset: 2px;
 }
 
@@ -40,6 +40,7 @@
   font-weight: 600;
   min-width: 140px;
   text-align: center;
+  color: #4a3f44;
 }
 
 .calendar-grid {
@@ -50,10 +51,12 @@
 
 .calendar-weekday {
   text-align: center;
-  padding: 8px 0;
-  font-size: 13px;
-  color: #999;
+  padding: 10px 0;
+  font-size: 12px;
+  color: #b0a0a8;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .calendar-day {
@@ -62,29 +65,33 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: default;
   font-size: 14px;
+  color: #4a3f44;
   position: relative;
   transition: background 0.2s ease;
   min-height: 44px;
+  background: #f5eff3;
 }
 
 .calendar-day.empty {
+  background: transparent;
   cursor: default;
 }
 
 .calendar-day.has-birthday {
   cursor: pointer;
-  background: #1a1a40;
+  background: #f5dfe8;
+  border: 1px solid #e8c8d4;
 }
 
 .calendar-day.has-birthday:hover {
-  background: #2a2a60;
+  background: #eecfd9;
 }
 
 .calendar-day.has-birthday:focus-visible {
-  outline: 2px solid #ff4499;
+  outline: 2px solid #d4567a;
   outline-offset: -2px;
 }
 
@@ -96,15 +103,15 @@
 .calendar-dots {
   display: flex;
   gap: 2px;
-  margin-top: 2px;
+  margin-top: 3px;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 100%;
 }
 
 .calendar-dot {
-  width: 6px;
-  height: 6px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
   flex-shrink: 0;
 }

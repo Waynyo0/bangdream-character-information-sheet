@@ -13,13 +13,13 @@
   font-family: "Righteous", "Poppins", "Microsoft YaHei", sans-serif;
   font-size: 32px;
   font-weight: 400;
-  color: #ff4499;
+  color: #d4567a;
   letter-spacing: 1px;
 }
 
 .app-subtitle {
   font-size: 14px;
-  color: #999;
+  color: #a09098;
   margin-top: 8px;
 }
 
@@ -28,9 +28,9 @@
   justify-content: center;
   gap: 4px;
   margin: 24px 0;
-  background: #16213e;
+  background: #dfd5dc;
   border-radius: 12px;
-  padding: 4px;
+  padding: 5px;
   flex-wrap: wrap;
 }
 
@@ -38,7 +38,7 @@
   padding: 10px 24px;
   border: none;
   background: transparent;
-  color: #aaa;
+  color: #8a7882;
   border-radius: 10px;
   cursor: pointer;
   font-size: 14px;
@@ -49,25 +49,26 @@
 }
 
 .tab-btn:hover {
-  background: rgba(255, 68, 153, 0.15);
-  color: #ddd;
+  background: rgba(212, 86, 122, 0.15);
+  color: #d4567a;
 }
 
 .tab-btn:focus-visible {
-  outline: 2px solid #ff4499;
+  outline: 2px solid #d4567a;
   outline-offset: -2px;
   border-radius: 10px;
 }
 
 .tab-btn.active {
-  background: #ff4499;
+  background: #d4567a;
   color: #fff;
 }
 
 .app-main {
-  background: #0f0f23;
-  border-radius: 14px;
-  padding: 16px 20px;
+  background: #f2eaf0;
+  border: 1px solid #dfd5dc;
+  border-radius: 16px;
+  padding: 20px 24px;
   min-height: 400px;
 }
 
@@ -86,17 +87,18 @@
   }
 
   .app-main {
-    padding: 12px 12px;
+    padding: 14px 14px;
+    border-radius: 12px;
   }
 }
 
 .status-msg {
   text-align: center;
   padding: 60px 20px;
-  color: #999;
+  color: #b0a0a8;
   font-size: 16px;
 }
 
 .status-error {
-  color: #ff4444;
+  color: #cc8690;
 }

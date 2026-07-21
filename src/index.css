@@ -12,8 +12,8 @@ html {
 
 body {
   font-family: "Poppins", "Microsoft YaHei", "PingFang SC", sans-serif;
-  background: #1a1a2e;
-  color: #eee;
+  background: #ece3e8;
+  color: #4a3f44;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
@@ -23,7 +23,7 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid #ff4499;
+  outline: 2px solid #d4567a;
   outline-offset: 2px;
   border-radius: 2px;
 }
@@ -43,14 +43,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f0f23;
+  background: #dfd5dc;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #444;
+  background: #c4b6c0;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #a898a3;
 }

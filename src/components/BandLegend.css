@@ -3,9 +3,10 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px 20px;
-  padding: 16px 20px;
-  background: #16213e;
-  border-radius: 10px;
+  padding: 16px 24px;
+  background: #f5eff3;
+  border: 1px solid #dfd5dc;
+  border-radius: 14px;
   margin-top: 24px;
 }
 
@@ -14,7 +15,7 @@
   align-items: center;
   gap: 6px;
   font-size: 13px;
-  color: #bbb;
+  color: #8a7882;
 }
 
 .band-legend-dot {

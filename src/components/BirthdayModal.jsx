@@ -2,16 +2,16 @@ import { formatBirthday } from "../utils/helpers";
 import "./BirthdayModal.css";
 
 const bandColors = {
-  "Poppin'Party": "#FF4499",
-  Afterglow: "#EE3344",
-  "Pastel*Palettes": "#44DDAA",
-  Roselia: "#3355BB",
-  "Hello, Happy World!": "#FFBB11",
-  Morfonica: "#AA44DD",
-  "RAISE A SUILEN": "#33CCCC",
-  "MyGO!!!!!": "#4488CC",
-  "Ave Mujica": "#7744AA",
-  "梦限大MewType": "#FF6633",
+  "Poppin'Party": "#c46a82",
+  Afterglow: "#c46262",
+  "Pastel*Palettes": "#62a88a",
+  Roselia: "#6270a8",
+  "Hello, Happy World!": "#c49a42",
+  Morfonica: "#8e62b8",
+  "RAISE A SUILEN": "#52a094",
+  "MyGO!!!!!": "#628ab8",
+  "Ave Mujica": "#7562a0",
+  "梦限大MewType": "#c47e52",
 };
 
 export default function BirthdayModal({ members, month, day, onClose }) {
