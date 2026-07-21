@@ -9,7 +9,7 @@ import "./App.css";
 const TABS = [
   { key: "today", label: "🎂 今日" },
   { key: "chart", label: "📊 身高" },
-  { key: "cards", label: "🃏 卡片" },
+  { key: "cards", label: "🃏 排行" },
   { key: "calendar", label: "📅 日历" },
 ];
 
